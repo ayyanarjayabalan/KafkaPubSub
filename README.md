@@ -4,7 +4,9 @@ Event drive architecture using kafka, zookeeper, rabbitmq, asp.net core web api
 ### Install zookeeper, kafka and kafkadrop in docker container using docker decompose file
 From the command prompt, go to the docker-decompose.yaml file folder and run below command to install the above services in docker container
 
-#### docker compose up -d
+```
+docker compose up -d
+```
 
 ### kafka commands
 ```
