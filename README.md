@@ -6,7 +6,36 @@ From the command prompt, go to the docker-decompose.yaml file folder and run bel
 
 #### docker compose up -d
 
-### More on kafka commands
-https://github.com/narottamgoyal/file-share/blob/main/kafka%20commands.md
+### kafka commands
+```
+Download from https://kafka.apache.org/downloads and extract it to local disk. 
+```
+
+### Send messages
+
+```
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic TestTopic
+```
+```
+.\bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic TestTopic
+```
+
+### Consume messages
+```
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic TestTopic  --from-beginning
+```
+```
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic TestTopic
+```
+
+
+### Consume messages (from micro services)
+```
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic VideoDeletedEvent  --from-beginning
+```
+```
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic VideoCreatedEvent  --from-beginning
+```
+
 
 
