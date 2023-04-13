@@ -1,4 +1,4 @@
-# KafkaPubSub
+# Kafka Publisher and Subscriber microservices using asp.net core web api
 Event drive architecture using kafka, zookeeper, rabbitmq, asp.net core web api
 
 ### Install zookeeper, kafka and kafkadrop in docker container using docker decompose file
